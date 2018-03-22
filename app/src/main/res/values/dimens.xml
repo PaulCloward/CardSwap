@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="edit_text_size">12sp</dimen>
+    <dimen name="floating_action_button_margin">30dp</dimen>
+    <dimen name="popup_title_text_size">20sp</dimen>
+    <dimen name="popup_margin_bottom">15dp</dimen>
+    <dimen name="popup_padding">15dp</dimen>
+    <dimen name="rounded_corner_radius">6dp</dimen>
+    <dimen name="tab_profile_width_size">65dp</dimen>
+    <!--Floating Action Button size-->
+    <dimen name="design_fab_size_normal" tools:override="true">80dp</dimen>
+    <!--Floating Action Button Image size-->
+    <dimen name="design_fab_image_size" tools:override="true">40dp</dimen>
+    <dimen name="popup_companyinfo_between_elements">15dp</dimen>
+    <dimen name="logo_label_text_size">22sp</dimen>
+    <dimen name="ic_email_max_size">20dp</dimen>
+    <dimen name="ic_phone_max_size">20dp</dimen>
+    <dimen name="ic_dm_max_size">20dp</dimen>
+    <dimen name="popup_contact_information_et_padding">0dp</dimen>
+    <dimen name="popup_contact_information_title_margin_bottom">15dp</dimen>
+    <dimen name="popup_contact_information_icon_edit_text_space_between">10dp</dimen>
+    <dimen name="popup_contact_information_element_margin">10dp</dimen>
+    <dimen name="viewcard_line_seperator_margin">10dp</dimen>
+    <dimen name="toolbar_margin_top">15dp</dimen>
+    <dimen name="card_rounded_corners">5dp</dimen>
+
+</resources>

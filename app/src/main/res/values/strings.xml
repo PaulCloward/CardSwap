@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">CardSwap</string>
+
+    <!--Account Activity Strings-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Sign In</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_link_to_register">Not a member? Get registered in CARDSWAP now!</string>
+
+    <!--Register Activity Strings-->
+    <string name="sign_in_toolbar_title">CREATE YOUR ACCOUNT</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="email">Email</string>
+    <string name="action_sign_in_short">Create Account</string>
+
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="popup_email_title">Email</string>
+    <string name="popup_email_hint">email@example.com</string>
+    <string name="popup_phone_title">Phone</string>
+    <string name="popup_phone_hint">1-801-111-1111</string>
+    <string name="popup_companyinfo_name_title">Name</string>
+    <string name="popup_companyinfo_name_hint">John Doe</string>
+    <string name="popup_companyinfo_title">Title</string>
+    <string name="popup_companyinfo_title_hint">company position</string>
+    <string name="popup_companyinfo_company">Company</string>
+    <string name="popup_companyinfo_company_hint">company name</string>
+    <string name="logo_label">LOGO</string>
+    <string name="popup_contact_information_title">Add Contact Information</string>
+    <string name="popup_contact_information_phone_hint">Phone</string>
+    <string name="popup_contact_information_cell_hint">cell</string>
+    <string name="popup_contact_information_fax_hint">fax</string>
+    <string name="popup_contact_information_website_hint">Website</string>
+    <string name="popup_contact_information_street_address_hint">Street Address</string>
+    <string name="popup_contact_information_mailing_address_hint">Mailing Address</string>
+    <string name="popup_share_title">Share</string>
+    <string name="popup_tv_share_phone_label">Text</string>
+    <string name="popup_tv_share_email_label">Email</string>
+    <string name="popup_tv_share_nearby_label">Nearby</string>
+    <string name="popup_tv_share_other_label">Other</string>
+
+</resources>

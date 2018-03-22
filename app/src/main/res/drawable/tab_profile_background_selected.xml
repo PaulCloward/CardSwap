@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:width="@dimen/tab_profile_width_size"
+        android:gravity="center_horizontal"
+        >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorTabProfileWidth"
+                />
+        </shape>
+    </item>
+    <item android:bottom="1.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorTabProfileSelectedBackground"/>
+        </shape>
+    </item>
+
+</layer-list>

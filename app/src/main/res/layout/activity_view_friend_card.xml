@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.paulcloward.cardswap.ViewFriendCardActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_marginTop="@dimen/toolbar_margin_top">
+        <ImageView
+            android:id="@+id/iv_viewfriendcard_toolbar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_arrow"
+            />
+
+        <TextView
+            android:id="@+id/tv_viewfriendcard_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW CARD"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="3dp"
+            app:contentPaddingRight="0dp"
+            app:contentPaddingLeft="0dp"
+            app:cardMaxElevation="15dp"
+            android:layout_marginTop="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                >
+                <LinearLayout
+                    android:id="@+id/topOfCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="#FFFFFF">
+                    <ImageView
+                        android:id="@+id/iv_viewfriendcard_image"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_weight="1"
+                        />
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/topOfCard"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp">
+                        <TextView
+                            android:id="@+id/tv_viewfriendcard_name"
+                            android:text="Paul Cloward"
+                            android:textSize="24sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_viewfriendcard_title"
+                            android:text="Card Title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_viewfriendcard_company"
+                            android:text="Card Title"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:clickable="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/ic_phone_max_size"
+            android:maxHeight="@dimen/ic_phone_max_size"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_viewfriendcard_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_phone_hint"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dm"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/ic_dm_max_size"
+            android:maxHeight="@dimen/ic_dm_max_size"
+            android:scaleType="fitCenter"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="@dimen/viewcard_line_seperator_margin"
+        android:layout_marginRight="@dimen/viewcard_line_seperator_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:clickable="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_message"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/ic_phone_max_size"
+            android:maxHeight="@dimen/ic_phone_max_size"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_viewfriendcard_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_email_hint"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="@dimen/viewcard_line_seperator_margin"
+        android:layout_marginRight="@dimen/viewcard_line_seperator_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:clickable="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_street_address"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/ic_phone_max_size"
+            android:maxHeight="@dimen/ic_phone_max_size"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_viewfriendcard_street_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_email_hint"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="@dimen/viewcard_line_seperator_margin"
+        android:layout_marginRight="@dimen/viewcard_line_seperator_margin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:clickable="false">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/ic_phone_max_size"
+            android:maxHeight="@dimen/ic_phone_max_size"
+            android:scaleType="fitCenter"
+            />
+
+        <TextView
+            android:id="@+id/tv_viewfriendcard_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popup_email_hint"
+            android:layout_marginLeft="70dp"
+            android:layout_centerVertical="true"
+           />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginLeft="@dimen/viewcard_line_seperator_margin"
+        android:layout_marginRight="@dimen/viewcard_line_seperator_margin"/>
+
+</LinearLayout>

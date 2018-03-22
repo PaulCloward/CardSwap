@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.paulcloward.cardswap.Auth.RegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_marginTop="@dimen/toolbar_margin_top">
+
+        <ImageView
+            android:id="@+id/iv_signup_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_gravity=""/>
+
+        <TextView
+            android:id="@+id/tv_signup_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in_toolbar_title"
+            android:layout_gravity="center"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteY="74dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <EditText
+            android:id="@+id/et_signup_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_first_name"
+            android:textSize="@dimen/edit_text_size"
+            android:layout_marginBottom="5dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@android:color/darker_gray"
+            android:textCursorDrawable="@null"/>
+
+
+        <EditText
+            android:id="@+id/et_signup_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_last_name"
+            android:focusableInTouchMode="true"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:textSize="@dimen/edit_text_size"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:textColor="@android:color/darker_gray"
+            android:textCursorDrawable="@null"/>
+
+
+        <EditText
+            android:id="@+id/et_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:focusableInTouchMode="true"
+            android:imeOptions="actionUnspecified"
+            android:textSize="@dimen/edit_text_size"
+            android:layout_marginBottom="5dp"
+            android:maxLines="1"
+            android:textColor="@android:color/darker_gray"
+            android:textCursorDrawable="@null"/>
+
+        <EditText
+            android:id="@+id/et_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="@string/hint_password"
+            android:imeActionId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:textSize="@dimen/edit_text_size"
+            android:maxLines="1"
+            android:textColor="@android:color/darker_gray"
+            android:textCursorDrawable="@null"/>
+
+
+        <TextView
+            android:id="@+id/tv_agreement_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:text="By continuing, I agree to CardSwap's Terms and Privacy Policy."
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:background="@drawable/button_register"
+            android:text="@string/action_sign_in_short"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btn_reset_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/btn_forgot_password"
+            android:textAllCaps="false"
+            android:textColor="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <!-- Link to Login Screen -->
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:id="@+id/menu_title"
+            android:title="CARDSWAP"
+            >
+        </item>
+    </group>
+    <item android:id="@+id/settings"
+        android:title="Settings">
+    </item>
+    <item android:id="@+id/feedback"
+        android:title="Feedback">
+    </item>
+    <item android:id="@+id/contactus"
+        android:title="Contact Us">
+    </item>
+    <item android:id="@+id/signout"
+        android:title="Sign Out">
+    </item>
+</menu>

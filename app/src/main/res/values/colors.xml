@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorCreateAccountButton">#373737</color>
+    <color name="colorLightGray">#d3d3d3</color>
+
+    <color name="colorTabProfileSelectedBackground">#FFFFFF</color>
+    <color name="colorTabProfileUnselectedBackground">#FFFFFF</color>
+    <color name="colorTabProfileContentBackground">#eaeaea</color>
+    <color name="colorNewCardBackground">#f7f7f7</color>
+    <color name="colorEditTextUnderline">#808080</color>
+    <color name="colorEditTextUnderlineTransparent">#00FFFFFF</color>
+    <color name="colorPopupTitleText">#808080</color>
+    <color name="colorTabProfileWidth">#000000</color>
+    <color name="rounded_corner_background_color">#FFFFFF</color>
+
+</resources>
